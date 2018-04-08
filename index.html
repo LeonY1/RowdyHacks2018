@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+	<meta charset = "utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
+  </head>
+
+  <style>
+	h1{
+  	}
+	
+	p{
+		color: red;
+	}
+	
+	.nav-stacked{
+		background-color: white;
+		font-size: 20px;
+		width: 120px;
+		text-align: center;
+	}
+	
+	#container2{
+		display: inline-block;
+		width: 120px;
+		height: 1000px;
+		overflow: hidden;
+	}
+	
+	#container3{
+		display: inline-block;
+		width: 200px;
+		height: 1000px;
+		overflow: hidden;
+	}
+
+  </style>
+
+  <body>
+    <h1> <center> Welcome to the Clothing Database</center></h1>
+    <p> <center> Select a tab:</center> </p>
+    <div class = "container" >
+	<ul class = "nav nav-tabs" >
+	    <li class = "active"><a href = "#Home" data-toggle= "tab">Home</a> </li>
+	    <li> <a href = "#Clothes" data-toggle= "tab">Clothes</a> </li>
+	    <li> <a href = "#About" data-toggle= "tab">About</a> </li>
+	    <li> <a href = "#ContactUs" data-toggle= "tab">Contact Us</a> </li>
+	</ul>
+	
+	<div class= "tab-content">
+	   <div class= "tab-pane active" id="Home">
+		<p> <center>This website was made by riShy, T4Lha, MarK, Michelle, and L30N</center> </p>
+	   </div>
+	   <div class= "tab-pane" id="Clothes">
+		<div id = "container2">
+			<div class = "nav nav-stacked" >
+				<ul class = "nav nav-stacked" >
+	    				<li><a href = "#Shirts" data-toggle= "tab">Shirts</a> </li>
+	    				<li> <a href = "#Pants" data-toggle= "tab">Pants</a> </li>
+	    				<li> <a href = "#Shoes" data-toggle= "tab">Shoes</a> </li>
+					<li> <a href = "#Dresses" data-toggle= "tab">Dresses</a> </li>
+					<li> <a href = "#Jackets" data-toggle= "tab">Jackets</a> </li>
+				</ul>
+			</div>
+	   	</div>
+		<div id= "container3">
+			<div class = "tab-content">
+	   			<div class= "tab-pane active" id="Shirts">
+					<p> <center>This </center> </p>
+	   			</div>
+				<div class= "tab-pane" id="Pants">
+					<p> <center>websit</center> </p>
+	   			</div>
+	   			<div class= "tab-pane" id="Shoes">
+					<p> <center>test</center> </p>
+	   			</div>
+	   			<div class= "tab-pane" id="Dresses">
+					<p> <center>Michelle, and L30N</center> </p>
+	   			</div>
+	   			<div class= "tab-pane" id="Jackets">
+					<p> <center> made </center> </p>
+	   			</div>
+			</div>
+		</div>
+	   </div>
+	   <div class= "tab-pane" id="About">
+		<p> <center>This is the stupid about tab</center> </p>
+	   </div>
+	   <div class= "tab-pane" id="ContactUs">
+		<p> <center>Made by Rishy and Talha and Michael and Leon and Mark</center> </p>
+	   </div>
+        </div>
+    </div>
+    
+  </body>
+</html>
