@@ -18,18 +18,20 @@ for item in data_store["favorites"]:
         if(category["name"].lower().find("dress") != -1):
             text += "'Dress'"
             break
-        if (category["name"].lower().find("shirt") != -1):
+        elif (category["name"].lower().find("shirt") != -1):
             text += "'Shirt'"
             break
-        if (category["name"].lower().find("jacket") != -1):
+        elif (category["name"].lower().find("jacket") != -1):
             text += "'Dress'"
             break
-        if (category["name"].lower().find("shoe") != -1):
+        elif (category["name"].lower().find("shoe") != -1):
             text += "'Shoes'"
             break
-        if (category["name"].lower().find("pants") != -1):
+        elif (category["name"].lower().find("pants") != -1):
             text += "'Pants'"
             break
+        else:
+            text += "'Miscellaneous'"
     text += ", " + str(product["price"])
     text += ", '" + product["brand"]["name"] +"'"
     text += ", " + str(product["inStock"])
@@ -37,7 +39,7 @@ for item in data_store["favorites"]:
     text += ", '" + product["clickUrl"] +"'"
     for stock in product["stock"]:
         temp_text = text;
-        temp_text += ", '" + stock["color"]["name"] + "', " + stock["size"]["name"] + ");"
+        temp_text += ", '" + stock["color"]["name"] + "', '" + stock["size"]["name"] + "');"
         temp_text = sql + temp_text + "\n"
         output.write(temp_text)
         print(sql + temp_text)
