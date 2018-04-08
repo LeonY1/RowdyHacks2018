@@ -1,9 +1,9 @@
 <?php
 $input = "input.txt";
 $servername = "localhost";
-$username = "RowdyCrew";
-$password = "rishytalhamichaelmarkleon";
-$dbname = "myDB";
+$username = "root";
+$password = "gtforoot315961";
+$dbname = "mydb";
 
 $myfile = fopen($input, "r") or die("Unable to open file!");
 $conn = mysqli_connect($servername, $username, $password);
@@ -15,10 +15,8 @@ if(!$conn){
 }
 
 while(!feof($myfile)){
-	if($conn->query(fgets($myfile))===TRUE)
-		echo "New record created successfully";
-	else 
-		echo "Error". sql . "<br>" . $conn->error;
+	
+	$result = mysqli_query($conn, fgets($myfile))or die('error getting data');
 }
 
 fclose($input);
