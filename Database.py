@@ -37,7 +37,7 @@ for item in data_store["favorites"]:
     text += ", '" + product["clickUrl"] +"'"
     for stock in product["stock"]:
         temp_text = text;
-        temp_text += ", '" + stock["color"]["name"] + "', " + stock["size"]["name"] + ")"
+        temp_text += ", '" + stock["color"]["name"] + "', " + stock["size"]["name"] + ");"
         temp_text = sql + temp_text + "\n"
         output.write(temp_text)
         print(sql + temp_text)
